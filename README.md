@@ -80,6 +80,27 @@ Contoso69*
 ...
 ```
 
+There is also a "quickest" version of the set of rules that can be run like:
+```
+$ john --wordlist=words.txt --rules=MonkRulesQuickest --external=Filter_ADComplex --stdout
+
+Contoso2023
+Contoso23
+Contoso1
+Contoso2
+Contoso123
+Contoso789
+...
+#2024contoso
+!2024contoso
+@24Contoso
+#24Contoso
+!24Contoso
+@24contoso
+#24contoso
+!24contoso
+```
+
 For a complete list of rules and filters, please see [Monk rules](rules.lst) and [Monk filters](filters.lst).
 I think their names are self-explanatory, but you can always consult the source code for a better understanding.
 
